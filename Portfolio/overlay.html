@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.75);
+        overflow: hidden;
+
+        height: 0;
+        transition: .5s ease;
+    }
+    .Portfolio-over:hover .overlay{
+    height: 100%;
+    }
+    .overlay h1{
+        width: 100%;
+        margin-top: 30%;
+        color: var(--primary-color);
+        font-size: 4vw;
+        position: absolute;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        transform: rotate(-5deg)skewX(-5deg);
+    }
+    .overlay h2{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: var(--primary-color);
+        font-size: 1.2vw;
+        margin: 60% 0 0 18%;
+        width: 70%;
+        letter-spacing: 5px;
+        line-height: 1.5em;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="Portfolio-over">
+            <img src="2024-04-10.png" alt="">
+            <div class="overlay"> 
+                <h1>
+                    About
+                </h1>
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita suscipit! Mollitia ad necessitatibus laboriosam odio illum ut error aliquid!
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
